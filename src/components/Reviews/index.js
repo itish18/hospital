@@ -8,22 +8,29 @@ import ReviewItem from "./ReviewItem"
 const Reviews = () => {
   const [reviews, setReviews] = useState([])
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const controller = new AbortController()
-        const signal = controller.signal
-        const { data } = await axios.get(
-          "https://admin.tomedes.com/api/v1/get-reviews?page=1",
-          { signal }
-        )
+  const fetchData = async () => {
+    try {
+      const controller = new AbortController()
+      const signal = controller.signal
+      const { data } = await axios.get(
+        "https://admin.tomedes.com/api/v1/get-reviews?page=1",
+        { signal }
+      )
+      if (data?.data !== reviews) {
         setReviews(data?.data)
-        return () => controller.abort()
-      } catch (e) {
-        console.log(e.message)
       }
+      return () => controller.abort()
+    } catch (e) {
+      console.log(e.message)
     }
+  }
+
+  useEffect(() => {
     fetchData()
+    const interval = setInterval(() => {
+      fetchData()
+    }, 30000)
+    return () => clearInterval(interval)
   }, [])
 
   return (
