@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 10px 50px 25px rgba(0, 59, 121, 0.0725798);
+    border-radius: 20px;
+    height: 220px;
+    width: 250px;
+   
+}
+
+.image{
+    transform: translateY(-5.5rem);
+    z-index: 1;
+    
+}
+
+.smallImage{
+    transform: translateY(-3rem);
+    z-index: 1;
+}
+
+.tag{
+    font-weight: 600;
+    font-size: 24px;
+    transform: translateY(-3rem);
+}
+
+.smallTag{
+    font-weight: 600;
+    font-size: 24px;
+}

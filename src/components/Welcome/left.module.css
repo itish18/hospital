@@ -1,0 +1,64 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+    
+    
+}
+
+.welcomeTitle{
+    font-weight: 700;
+    font-size: 24px;
+    color:#002348
+}
+
+.tagline{
+    font-size: 64px;
+    font-weight: 700;
+    color: #003B79;
+    margin-top: 30px;
+}
+
+.dynamicTagline{
+    font-size: 54px;
+    font-weight: 600;
+    color: #003B79;
+   
+}
+
+.workContent{
+    font-size: 20px;
+    line-height: 40px;
+    color: #002348;
+}
+
+.buttonBox{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 44px;
+}
+
+.appointmentButton{
+    padding: 20px 50px;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    background: #007FF4;
+    color:white;
+    border: none;
+}
+
+.depButton{
+    padding: 20px 83px;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    color:#007FF4;
+    border: 1px solid white;
+    background: white;
+}
+
+.depButton:hover{
+   border-color: #007FF4;
+}

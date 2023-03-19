@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+   padding: 166px 120px 100px 120px;
+   
+
+}
+
+.heading{
+    font-size: 54px;
+    font-weight: 600;
+    color: #003B79;
+    margin: 0px;
+    
+}
+
+.content{
+    font-size: 20px;
+    color: #002348;
+    max-width: 546px;
+    text-align: center;
+    line-height: 40px;
+}

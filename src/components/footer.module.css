@@ -1,0 +1,25 @@
+.container{
+    padding: 50px 120px 100px 120px;
+    background-color:  #ECF4FF;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+}
+
+.social{
+    display: flex;
+    gap: 9px;
+}
+
+
+.copy{
+    font-weight: 600;
+    font-size: 14px;
+    list-style: 34px;
+    color: #667C94;
+}
