@@ -7,3 +7,5 @@ import Seo from "../components/seo"
 const UsingSSR = () => {
   return <></>
 }
+
+export default UsingSSR
