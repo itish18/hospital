@@ -12,10 +12,7 @@ const Reviews = () => {
     try {
       const controller = new AbortController()
       const signal = controller.signal
-      const { data } = await axios.get(
-        "https://admin.tomedes.com/api/v1/get-reviews?page=1",
-        { signal }
-      )
+      const { data } = await axios.get(process.env.API, { signal })
       if (data?.data !== reviews) {
         setReviews(data?.data)
       }
